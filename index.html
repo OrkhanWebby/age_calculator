@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script defer src="./script.js"></script>
+  
+  <title>Age calculator</title>
+
+ 
+</head>
+<body>
+  
+  <div class="main-container">
+
+    <div class="set-date">
+      <form action="#" method="GET" id="dataForm">
+
+        <div class="date">D A Y 
+          
+          <input type="text" id="day-insert" placeholder="DD" autocomplete="off">
+          
+          <div>
+            <span id="dayMissing">Day entry is missing</span>
+            <span id="wrongDay">Must be a valid day</span>
+            <span>&nbsp;</span>
+          </div>
+          
+        </div>
+        
+        <div class="date">M O N T H
+          <input type="text" id="month-insert" placeholder="MM" autocomplete="off">
+
+          <div>
+            <span id="monthMissing">Month entry is missing</span>
+            <span id="wrongMonth">Must be a valid month</span>
+            <span>&nbsp;</span>
+          </div>
+          
+        </div>
+
+        <div class="date">Y E A R  
+          <input type="text" id="year-insert" placeholder="YYYY" autocomplete="off">
+
+          <div>
+            <span id="yearMissing">Year entry is missing</span>
+            <span id="wrongYear">Must be a valid year</span>
+            <span>&nbsp;</span>          
+          </div>
+          
+        </div>
+      </div>
+      
+      <div id="arrow"><hr><img src="./assets/images/icon-arrow.svg" alt="Arrow down"></div>
+    </form>
+
+    <div class="text">
+      <h1 id="yearDisplay">-- years</h1>
+      <h1 id="monthDisplay">-- months</h1>
+      <h1 id="dayDisplay">-- days</h1>
+    </div>
+
+  </div>
+  
+</body>
+</html>

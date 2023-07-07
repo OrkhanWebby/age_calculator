@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.main-container {
+    background-color: white;
+    width: 37rem;
+    height: 25rem;
+    border-radius: 1.5rem;
+    border-bottom-right-radius: 7rem;
+    padding: 3rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+}
+
+#dayMissing, 
+#wrongDay, 
+#monthMissing, 
+#wrongMonth, 
+#yearMissing, 
+#wrongYear {
+    display: none;
+    font-size: 8px;
+    font-style: italic;
+    color: red;
+}
+.set-date form {
+    display: flex;
+    gap: 2rem;
+}
+.date {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+input{
+    border: 1px solid gainsboro;
+}
+input:focus{
+    outline: none;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+#day-insert, #month-insert, #year-insert {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 5px;
+    text-align: center;
+}
+#arrow {
+    margin-top: 3rem;
+    position: relative;
+}
+#arrow img {
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    top: -1.9rem;
+    right: 0;
+    cursor: pointer;
+}
+#arrow img:hover{
+    background-color: black;
+}
+.text {
+    margin-top: 1rem;
+}
+.text h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-style: italic;
+}
+p {
+    font-size: 10px;
+    display: none;
+    color: red;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 630px) {
+    .main-container{
+        width: 22rem;
+        height: fit-content;
+    }
+    .set-date form{
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        width: 15rem;
+    }
+    #day-insert, #month-insert, #year-insert{
+        width: 15rem;
+    }
+    #arrow {
+        margin-top: 1rem;
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+}
